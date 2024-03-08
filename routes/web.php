@@ -12,15 +12,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('greeting', function () {
-//     return 'Hello World';
-// });
+Route::get('greeting', function () {
+    return 'Hello World';
+});
 
 // Route::match(['get', 'post'], '/', function () {
 //     return 'Hello World';
 // });
-Route::any ('foo', function () {
-    return 'Hello World';
+Route::redirect('/foo', '/greeting',301);
 
-    } );
+
 

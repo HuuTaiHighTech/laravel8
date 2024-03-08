@@ -19,7 +19,8 @@ Route::get('greeting', function () {
 // Route::match(['get', 'post'], '/', function () {
 //     return 'Hello World';
 // });
-Route::redirect('/foo', '/greeting',301);
+Route::redirect('/foo', '/greeting');
+Route::view('/welcome', 'welcome',['name' => 'Tom']);
 
 
 

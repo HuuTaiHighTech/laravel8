@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('greeting', function () {
+// Route::get('greeting', function () {
+//     return 'Hello World';
+// });
+
+Route::match(['get', 'post'], '/', function () {
     return 'Hello World';
 });
+

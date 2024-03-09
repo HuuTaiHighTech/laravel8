@@ -20,7 +20,7 @@ Route::get('greeting', function () {
 //     return 'Hello World';
 // });
 Route::redirect('/foo', '/greeting');
-Route::view('/welcome', 'welcome',['name' => 'Tom']);
+Route::view('/welcome', 'welcome',['name' => 'Tom']);//array print http variable Tom
 
 
 
